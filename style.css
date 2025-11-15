@@ -33,15 +33,17 @@ body {
 }
 
 .logo {
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.05em;
 }
 
 .nav nav a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: #e5e7eb;
-  font-size: 0.95rem;
+  color: #ffffff;         /* brighter */
+  font-weight: 600;       /* bold */
+  font-size: 1rem;        /* slightly larger */
+  letter-spacing: 0.5px;  /* more readable */
   position: relative;
 }
 
@@ -231,3 +233,4 @@ body {
     transform: translate(-30px, 40px);
   }
 }
+
