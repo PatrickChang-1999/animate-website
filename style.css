@@ -98,6 +98,20 @@ body {
   justify-content: center;
 }
 
+/* ===== Hero Portrait ===== */
+.hero-portrait {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.25);
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
@@ -233,4 +247,5 @@ body {
     transform: translate(-30px, 40px);
   }
 }
+
 
