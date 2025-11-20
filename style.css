@@ -153,63 +153,54 @@ body {
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   text-decoration: none;
-  font-weight: 500;
-  border: 1px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease,
-    background 0.2s ease, color 0.2s ease;
+  font-weight: 600;
   font-size: 0.95rem;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
 }
 
 .btn.primary {
   background: linear-gradient(135deg, #38bdf8, #6366f1);
-  color: #ffffff;
+  color: white;
   box-shadow: 0 14px 30px rgba(56, 189, 248, 0.4);
 }
 
 .btn.secondary {
   background: transparent;
-  border-color: #4b5563;
   color: #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
 }
 
-.btn.primary:hover {
-  box-shadow: 0 18px 40px rgba(56, 189, 248, 0.55);
-}
-
-.btn.secondary:hover {
-  background: rgba(15, 23, 42, 0.85);
-  border-color: #9ca3af;
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.8);
-}
 
 /* ===== Floating Orbs ===== */
 .floating-orb {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 260px;
+  height: 260px;
   border-radius: 999px;
-  filter: blur(60px);
-  opacity: 0.5;
-  pointer-events: none;
-  background: radial-gradient(circle, #38bdf8, #0f172a);
-  top: 18%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.8), transparent);
+  top: 12%;
   right: 12%;
-  animation: float1 16s ease-in-out infinite;
+  filter: blur(8px);
+  opacity: 0.6;
+  animation: float 8s ease-in-out infinite alternate;
 }
 
 .orb-2 {
-  width: 260px;
-  height: 260px;
-  left: 8%;
-  bottom: 12%;
-  background: radial-gradient(circle, #ec4899, #111827);
-  animation: float2 22s ease-in-out infinite;
+  width: 200px;
+  height: 200px;
+  left: 10%;
+  bottom: 15%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.8), transparent);
+  animation-duration: 10s;
 }
+
 
 @keyframes float1 {
   0% {
@@ -308,3 +299,4 @@ body {
     transform: translateY(0);
   }
 }
+
