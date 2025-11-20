@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Book Reviews Sentiment Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<section class="project-hero">
+    <h1>Amazon Book Reviews Sentiment Analysis</h1>
+    <p>Using Machine Learning to classify sentiment and understand customer feedback</p>
+</section>
+
+<section class="project-section">
+    <h2>📘 Project Overview</h2>
+    <p>
+        This project analyzes Amazon book reviews to extract customer sentiment and
+        identify patterns in user feedback. Using a dataset of over 142 million reviews 
+        from Kaggle, our goal is to develop a predictive model that accurately classifies 
+        review sentiment. 
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>📊 Dataset Summary</h2>
+    <ul>
+        <li>Source: Amazon Books Reviews Dataset (Kaggle)</li>
+        <li>Time Span: 1996 – 2014</li>
+        <li>142.8M total reviews</li>
+        <li>3M unique users</li>
+        <li>212,404 unique books</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>🧹 Data Preparation</h2>
+    <p>
+        2000 reviews were randomly sampled from the full dataset, then narrowed to a
+        balanced dataset of 500 reviews using stratified sampling. Reviews were cleaned,
+        duplicates removed, and manually labeled for accurate training.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>⚙️ Sentiment Labeling & Modeling</h2>
+    <p>
+        We compared multiple sentiment labeling methods including VADER, Logistic Regression,
+        and Naïve Bayes. Naïve Bayes showed better alignment with manual labels and was used
+        to bootstrap sentiment labels for unlabeled records.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>🤖 Final Predictive Model</h2>
+    <p>
+        After evaluating Decision Trees, Random Forest, and SVM, the Support Vector Machine
+        achieved the best accuracy (~86%) with balanced recall for both sentiment classes.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>🏁 Conclusion</h2>
+    <p>
+        Manual labeling combined with machine learning produced strong predictive performance.
+        The insights from this project can help businesses understand consumer perception,
+        improve product strategies, and support data-driven decision-making.
+    </p>
+</section>
+
+<section class="project-section">
+    <a href="index.html" class="btn-back">← Back to Portfolio</a>
+</section>
+
+</body>
+</html>
