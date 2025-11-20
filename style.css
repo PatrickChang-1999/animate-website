@@ -151,36 +151,55 @@ body {
 }
 
 /* Floating Orbs */
+/* Right-side blue orb */
 .floating-orb {
   position: absolute;
-  width: 260px;
-  height: 260px;
+  width: 300px;
+  height: 300px;
   border-radius: 999px;
+
   background: radial-gradient(circle, rgba(56, 189, 248, 0.8), transparent);
 
-  /* Move farther away */
-  top: 10%;
-  right: 18%;
+  /* Move to top-right corner */
+  top: 8%;
+  right: 8%;
 
-  filter: blur(8px);
+  filter: blur(12px);
   opacity: 0.65;
 
-  /* Slightly more movement */
-  animation: float1 9s ease-in-out infinite alternate;
+  animation: floatRight 10s ease-in-out infinite alternate;
 }
 
+/* Left-side pink orb */
 .orb-2 {
-  width: 200px;
-  height: 200px;
-
-  /* Move farther down & left */
-  left: 14%;
-  bottom: 14%;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
 
   background: radial-gradient(circle, rgba(244, 114, 182, 0.8), transparent);
 
-  animation: float2 11s ease-in-out infinite alternate;
+  /* Move to top-left corner */
+  top: 12%;
+  left: 8%;
+
+  filter: blur(12px);
+  opacity: 0.6;
+
+  animation: floatLeft 12s ease-in-out infinite alternate;
 }
+
+/* Slightly different natural motions */
+@keyframes floatRight {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(-40px, 30px); }
+}
+
+@keyframes floatLeft {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(40px, -25px); }
+}
+
 
 /* subtle, slightly bigger movement */
 @keyframes float1 {
@@ -278,6 +297,7 @@ body {
     transform: translate(-30px, 40px);
   }
 }
+
 
 
 
