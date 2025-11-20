@@ -161,7 +161,7 @@ body {
 
   /* bring closer horizontally, and lower slightly */
   top: 28%;
-  right: 15%;
+  right: 6%;
 
   opacity: 0.55;
   filter: blur(60px);
@@ -179,7 +179,7 @@ body {
 
   /* bring closer horizontally, and raise slightly */
   top: 15%;
-  left: 15%;
+  left: 6%;
 
   opacity: 0.55;
   filter: blur(60px);
@@ -283,6 +283,7 @@ body {
     transform: translate(-30px, 40px);
   }
 }
+
 
 
 
