@@ -157,17 +157,16 @@ body {
   width: 260px;
   height: 260px;
   border-radius: 999px;
-
   background: radial-gradient(circle, rgba(56, 189, 248, 0.8), transparent);
 
-  /* push FAR to right side */
-  top: 18%;
-  right: -5%;    /* move outside screen edge */
+  /* bring closer horizontally, and lower slightly */
+  top: 28%;
+  right: -2%;
 
   opacity: 0.55;
   filter: blur(60px);
 
-  animation: floatRight 12s ease-in-out infinite alternate;
+  animation: floatRight 10s ease-in-out infinite alternate;
 }
 
 /* LEFT orb (pink) */
@@ -176,30 +175,28 @@ body {
   width: 230px;
   height: 230px;
   border-radius: 999px;
-
   background: radial-gradient(circle, rgba(244, 114, 182, 0.8), transparent);
 
-  /* push FAR to left side */
-  top: 20%;
-  left: -5%;    /* move outside screen edge */
+  /* bring closer horizontally, and raise slightly */
+  top: 15%;
+  left: -2%;
 
   opacity: 0.55;
   filter: blur(60px);
 
-  animation: floatLeft 14s ease-in-out infinite alternate;
+  animation: floatLeft 11s ease-in-out infinite alternate;
 }
 
 /* Tiny movement (not drifting inward) */
 @keyframes floatRight {
   from { transform: translate(0, 0); }
-  to   { transform: translate(-20px, 15px); }
+  to   { transform: translate(-10px, 55px); }   /* more vertical */
 }
 
 @keyframes floatLeft {
   from { transform: translate(0, 0); }
-  to   { transform: translate(20px, -15px); }
+  to   { transform: translate(10px, -55px); }   /* more vertical upward */
 }
-
 
 
 /* Sections */
@@ -286,6 +283,7 @@ body {
     transform: translate(-30px, 40px);
   }
 }
+
 
 
 
