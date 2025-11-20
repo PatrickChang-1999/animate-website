@@ -344,6 +344,29 @@ body {
   border-color: #38bdf8;
 }
 
+/* == PROJECT LINK CARDS == */
+
+.project-link {
+  display: block;                    /* whole card becomes clickable */
+  color: inherit;                    /* keep white text color */
+  text-decoration: none;             /* remove underline */
+}
+
+.project-link h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-link p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.project-cards .card {
+  cursor: pointer;
+}
+
+
 /* Scroll Reveal */
 .reveal {
   opacity: 0;
@@ -382,6 +405,7 @@ body {
     transform: translate(-30px, 40px);
   }
 }
+
 
 
 
